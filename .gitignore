@@ -1,0 +1,97 @@
+# Arquivo .gitignore para projeto Next.js / Node.js usando pnpm
+# Linguagem: Português
+
+# =========================
+# Dependências e caches
+# =========================
+node_modules/
+.pnpm-store/
+
+# Cache de builds Next.js / React
+.next/
+.next.cache/
+.swc/
+.vercel/
+# Caso use turbo (monorepo)
+.turbo/
+
+# Saídas de build genéricas
+build/
+dist/
+out/
+
+# =========================
+# Logs
+# =========================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# =========================
+# Informações de cobertura de testes
+# =========================
+coverage/
+
+# =========================
+# Arquivos temporários / PIDs
+# =========================
+*.pid
+*.seed
+*.tgz
+
+# =========================
+# Arquivos de ambiente (não versionar segredos)
+# =========================
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+# Mantenha um .env.example para referência
+!.env.example
+
+# =========================
+# TypeScript
+# =========================
+*.tsbuildinfo
+
+# =========================
+# Ferramentas e lint
+# =========================
+.eslintcache
+
+# =========================
+# Sistema Operacional / Editor
+# =========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+# Permitir alguns arquivos úteis do VSCode se quiser manter configurações compartilhadas
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+
+# =========================
+# Diversos
+# =========================
+*.orig
+*.rej
+
+# =========================
+# Imagens geradas ou otimizadas (opcional)
+# Se usar alguma pipeline que gera miniaturas em tempo de desenvolvimento
+# Descomente se necessário
+# public/generated/
+
+# =========================
+# Arquivos de bloqueio - manter para reprodutibilidade
+# (Não ignore pnpm-lock.yaml)
+# =========================
+# pnpm-lock.yaml
+
+# Fim do arquivo
